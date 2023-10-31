@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coders Guide For Programmers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Coders Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Technology</a></li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                            <li><a class="dropdown-item" href="#">Messsage Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-outline-warning" data-bs-toggle="modal"
+                        data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-outline-info" data-bs-toggle="modal"
+                        data-bs-target="#SignupModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="LoginModalLabel">Login To Coders Guide</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating-md mb-3">
+                        <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Signup Modal -->
+    <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="SignupModalLabel">SignUp To Coders Guide</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3 mb-3">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                      </div>
+                      <div class="form-floating-md mb-3">
+                        <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col-md mb-3">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="col-md mb-3">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+                    <div class="col-auto mb-3">
+                        <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                        <select class="form-select" id="autoSizingSelect">
+                          <option selected>Choose...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="row g-3 mb-3">
+                        <div class="col-sm-7">
+                          <input type="text" class="form-control" placeholder="City" aria-label="City">
+                        </div>
+                        <div class="col-sm">
+                          <input type="text" class="form-control" placeholder="State" aria-label="State">
+                        </div>
+                        <div class="col-sm">
+                          <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+                        </div>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <h2 class="text-center">Contact Us</h2>
+    
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Select Your Reason</option>
+        <option value="1">Web</option>
+        <option value="2">Technology</option>
+        <option value="3">News</option>
+        <option value="4">Other</option>
+      </select>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Member of Coders Guide</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">No</label>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="formFileMultiple" class="form-label">Drop Your File Here</label>
+        <input class="form-control" type="file" id="formFileMultiple" multiple>
+      </div>
+      <div class="button btn btn-success">Submit</div>
+    </div>
+
+    <footer class="text-body-success bg-white py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to Top</a>
+            </p>
+            <p class="mb-1">Copyright example of @ Coders Guide, inc 2022-2023</p>
+            <p class="mb-0">New to Coding <a href="index.html">Visit the homepage</a> or read our <a
+                    href="About.html">getting started guide</a>.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
